@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #navbar{
+            height:80px;
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            font-family: Roboto, Arial, sans-serif;
+        }
+        #query{
+            margin-left: ;
+            padding:1% 90%;
+        }
+        #searchbar{
+            margin-left: 22vw;
+            display: flex;
+        }#box{
+            margin-left: 10px;
+            height:20px;
+            width: 30px;
+            background-color: white;
+            border-radius: 6px;
+        }
+        div{
+            border: 1px solid white;
+        }
+        #main{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            height: 500px;
+            width:95%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #video_details{
+            flex:3;
+            height: 100%;
+        }
+        #recommendation{
+            flex:1;
+        }
+    </style>
+</head>
+<body onload="playVideo()">
+    
+    <div id="navbar">
+        <div id="box"></div>
+        <div><h1>Youtube</h1></div>
+        <!-- <div id="searchbar">
+            <input type="text" id="query"/>
+            <button onclick="searchVideos()">Search</button>
+        </div> -->
+    </div>
+    <div id="main">
+        <div id="video_details"></div>
+
+        <div id="recommendation">Recommendation</div>
+
+    </div>
+    
+</body>
+</html>
+
+<script src="video.js"></script>
